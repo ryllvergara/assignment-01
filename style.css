@@ -49,6 +49,7 @@ body {
     border: none;
     border-radius: 8px;
     font-size: 16px;
+    cursor: pointer;
   }
 
   button:hover {
@@ -123,6 +124,7 @@ body {
     right: 15px;
     top: 10px;
     font-size: 20px;
+    cursor: pointer;
   }
 
   .modal-actions button {
@@ -134,6 +136,6 @@ body {
 
   #editUser { background: #f8bbd0; }
   #editUser:hover { background: #f48fb1; }
-  
+
   #deleteUser { background: #ef5350; color: white; }
   #deleteUser:hover { background: #e53935; }
