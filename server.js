@@ -8,7 +8,6 @@ const app = express();
 const PORT = 3000;
 
 app.use(cors()); // Allow all cross-origin requests
-app.use(express.json());
 
 app.get('/', (req, res) => {
     let requestedCount = parseInt(req.query.results, 10);
@@ -32,20 +31,6 @@ app.get('/', (req, res) => {
         }
     });
 });
-
-app.patch('/user/:index', (req, res) => {
-    const index = parseInt(req.params.index, 10);
-    const updatedUser = req.body;
-
-    if (isNaN(index) || index < 0 || index >= cachedUsers.length) {
-        return res.status(404).json({ error: "User index out of range." });
-    }
-
-    cachedUsers[index] = updatedUser; 
-    
-    res.json({ message: "User updated successfully!", user: updatedUser });
-});
-
 
 async function initializeServer() {
     console.log(`Fetching ${MAX_RESULTS} users from Random User API...`);
