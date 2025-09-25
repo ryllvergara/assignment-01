@@ -6,9 +6,11 @@ const errorMsg = document.getElementById("errorMsg");
 
 let usersData = [];
 
+const LOCAL_API_URL = "http://localhost:3000/"; 
+
 function fetchUsers(count) {
   return new Promise(function (resolve, reject) {
-    fetch("https://randomuser.me/api/?results=" + count)
+    fetch(LOCAL_API_URL + "?results=" + count)
       .then(function (res) {
         if (!res.ok) {
           reject("Error fetching data");
