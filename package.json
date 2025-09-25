@@ -1,0 +1,26 @@
+{
+  "name": "assignment-01",
+  "version": "1.0.0",
+  "description": "Random user generator using Random User API (\"https://randomuser.me/api/\")",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryllvergara/assignment-01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ryllvergara/assignment-01/issues"
+  },
+  "homepage": "https://github.com/ryllvergara/assignment-01#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
